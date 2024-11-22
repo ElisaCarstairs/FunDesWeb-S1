@@ -1,0 +1,33 @@
+.Contenedor {
+    margin: 75px;
+    padding: 75px;
+    border: 10px dotted #771931;
+
+}
+.Bloque {
+    background-color: rgb(135, 194, 243);
+    border: 5px solid #8937af;
+    margin: 15px;
+    padding: auto;
+    width: 150px;
+}
+.en-linea {
+    background-color: rgb(228, 162, 76);
+    border: 2px solid #ec604e;
+    margin: 10px;
+    padding: 15px;
+    width: 30px;
+
+}
+.Button-block{
+    background-color: rgb(148, 148, 235);
+    border: 2px solid #ec604e;
+    margin: 10px;
+    padding: 15px;
+    width: 70px;
+}
+.Button-block:hover {
+    background-color: #771931;
+    color: #ec604e;
+
+}
