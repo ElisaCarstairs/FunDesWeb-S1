@@ -3,7 +3,7 @@
     display: flex;
 }
 .Contenedor img {
-    width: 60%;
+    width: 50%;
     padding: 10px;
 }
 .row-verde {
@@ -11,7 +11,7 @@
     color: white;    
 }
 .row-rojo {
-    background-color: #1e3932;
+    background-color: #007bff;
     color: white;    
 }
 .Fuente {
@@ -19,7 +19,7 @@
     font-size: 36px;   
 }
 .Texto {
-    max-width: 600px;
+    max-width: 400px;
     margin: auto;
     font-family: Inter; 
     font-size: 20px;
