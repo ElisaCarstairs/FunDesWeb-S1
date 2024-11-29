@@ -1,28 +1,32 @@
 .Contenedor {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 .Contenedor img {
-    width: 50%;
+    width: 60%;
+    padding: 10px;
 }
 .row-verde {
     background-color: #1e3932;
-    color: white;
-    display: flex;
-    
+    color: white;    
+}
+.row-rojo {
+    background-color: #1e3932;
+    color: white;    
 }
 .Fuente {
-    font-family: Anton;    
+    font-family: Anton; 
+    font-size: 36px;   
 }
 .Texto {
-    max-width: 800px;
-    justify-content: space-around;
+    max-width: 600px;
     margin: auto;
-    align-content: center;
+    font-family: Inter; 
+    font-size: 20px;
+    align-items: center;
 }
-p {
-    font-family: Geist;
-    font-size: 1.2em;
-    align-content: center;
+.Texto_Centrado {
+    justify-items: center;
+    flex-wrap: wrap;
 }
 
