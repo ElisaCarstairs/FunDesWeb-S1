@@ -10,7 +10,7 @@
     background-color: #1e3932;
     color: white;    
 }
-.row-rojo {
+.row-azul {
     background-color: #007bff;
     color: white;    
 }
@@ -29,4 +29,12 @@
     justify-items: center;
     flex-wrap: wrap;
 }
-
+.Item {
+    height: 100px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Anton;
+}
