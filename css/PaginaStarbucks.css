@@ -51,6 +51,7 @@
     height: auto;
     gap: 40px;
     cursor: pointer;
+    margin-right: 10px;
 }
 .boton2  {
     margin: auto solid #000;
@@ -66,11 +67,22 @@
     cursor: pointer;
 }
 .LadoDer {
-    justify-content: right;
+    flex-grow: 2;
 }
 .direction-row {
     flex-direction: row;
 }
 .direction-column {
     flex-direction: column;
+}
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Anton;
+    border-bottom: 1px solid #ccc;
+}
+.NavBar img {
+    height: 40px;
 }
