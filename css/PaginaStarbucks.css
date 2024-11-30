@@ -38,3 +38,39 @@
     align-items: center;
     font-family: Anton;
 }
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.boton {
+    margin: auto solid #000;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    height: auto;
+    gap: 40px;
+    cursor: pointer;
+}
+.boton2  {
+    margin: auto solid #000;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    height: auto;
+    gap: 40px;
+    cursor: pointer;
+}
+.LadoDer {
+    justify-content: right;
+}
+.direction-row {
+    flex-direction: row;
+}
+.direction-column {
+    flex-direction: column;
+}
