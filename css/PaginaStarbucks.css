@@ -5,35 +5,62 @@
     justify-content: space-between;
     gap: 5px;
     flex-wrap: nowrap;
-    min-height: 300px;
-    width: 100%;
+    min-height: 300px;    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 /* Ajustes para imágenes */
 .Contenedor img {
-    width: 450px;
+    width: 500px;
     height: auto;
     padding: 10px;
     flex-shrink: 0;
     object-fit: contain;
     border-radius: 10px;
+    
 }
 .row-verde {
     background-color: #1e3932; /* Verde oscuro */
     color: white;
-    max-width: 1200px;
-    
+        
 }
-
 .row-azul {
     background-color: #0061a8; /* Azul */
     color: white;
-    max-width: 1200px;  
 }
 .row-rojo {
-    background-color: #dc3545; /* Rojo */
-    color: white;
-    max-width: 1200px;  
+    background-color: #c73241; /* Rojo */
+    color: white; 
+}
+.Bloque_Rosa {
+    background-color: hsl(310, 100%, 91%); /* Rojo */
+    color: rgb(226, 9, 9); 
+    border-radius: 10px;
+}
+.Bloque_Azul {
+    background-color: #63bfce; /* Rojo */
+    color: #062024; 
+    border-radius: 10px;
+}
+.Informa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 400px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Inter; 
+    font-size: 20px;
+    align-items:flex-start;
+    padding: 5px;
+    max-height: 900px;
+}
+.Informa img {
+    width: 530px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 10px;
+    
 }
 .Fuente {
     font-family: Anton; 
@@ -133,4 +160,30 @@ main {
     width: 80%; /* O el ancho que necesites */
     margin: 0 auto;
     background-color: lightgray;
+    justify-content: space-around;
+}
+p {
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-style: Light 300;
+}
+.boton_body a{
+    font-family: IBM Plex Sans;
+    color: white;
+    font-style: Light 300;
+    margin: auto solid #fcfcfc;
+    border: 2px solid rgb(255, 252, 252);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    height: auto;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+.boton_body a:hover {
+    background-color: #c53e4c;
+    color: #ffffff;
+    text-decoration: none;
 }
