@@ -1,33 +1,60 @@
+/* Ajustes generales para .Contenedor */
 .Contenedor {
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: nowrap;
+    min-height: 300px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
+/* Ajustes para imágenes */
 .Contenedor img {
-    width: 50%;
+    width: 450px;
+    height: auto;
     padding: 10px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 10px;
 }
 .row-verde {
-    background-color: #1e3932;
-    color: white;    
+    background-color: #1e3932; /* Verde oscuro */
+    color: white;
+    max-width: 1200px;
+    
 }
+
 .row-azul {
-    background-color: #007bff;
-    color: white;    
+    background-color: #0061a8; /* Azul */
+    color: white;
+    max-width: 1200px;  
+}
+.row-rojo {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    max-width: 1200px;  
 }
 .Fuente {
     font-family: Anton; 
     font-size: 36px;   
 }
 .Texto {
-    max-width: 400px;
-    margin: auto;
+    max-width: 500px;
+    margin: 5px;
     font-family: Inter; 
     font-size: 20px;
     align-items: center;
+    padding: 10px;
+    max-height: 300px;
 }
 .Texto_Centrado {
-    justify-items: center;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
 }
 .Item {
     height: 100px;
@@ -37,10 +64,11 @@
     justify-content: center;
     align-items: center;
     font-family: Anton;
+    cursor: pointer;
 }
 .no-wrap {
     flex-wrap: nowrap;
-    width: 120px;
+    width: 150px;
 }
 .boton a{
     margin: auto solid #000;
@@ -100,4 +128,9 @@
 }
 .NavBar img {
     height: 40px;
+}
+main {
+    width: 80%; /* O el ancho que necesites */
+    margin: 0 auto;
+    background-color: lightgray;
 }
