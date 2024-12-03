@@ -34,32 +34,31 @@
 .Bloque_Rosa {
     background-color: hsl(310, 100%, 91%); /* Rojo */
     color: rgb(226, 9, 9); 
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .Bloque_Azul {
     background-color: #63bfce; /* Rojo */
     color: #062024; 
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .Informa {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     min-height: 300px;    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Inter; 
     font-size: 20px;
-    align-items:flex-start;
     padding: 5px;
-    max-height: 400px;
+    max-height: 900px;
 }
 .Informa img {
-    width: 400px;
+    width: 500px;
     height: auto;
-    flex-shrink: 0;
+    flex-shrink: 1;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .Fuente {
