@@ -55,7 +55,7 @@
     max-height: 400px;
 }
 .Informa img {
-    width: 530px;
+    width: 400px;
     height: auto;
     flex-shrink: 0;
     object-fit: contain;
@@ -160,7 +160,7 @@ main {
     width: 80%; /* O el ancho que necesites */
     margin: 0 auto;
     background-color: lightgray;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 p {
     font-family: IBM Plex Sans;
