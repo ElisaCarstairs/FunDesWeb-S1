@@ -2,9 +2,9 @@
 .Contenedor {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-height: 300px;    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-height: 300px;    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Inter; 
@@ -54,8 +54,7 @@
     max-height: 900px;
 }
 .Informa img {
-    width: 540px;
-    height: auto;
+    height: 445px;
     flex-shrink: 1;
     object-fit: contain;
     border-radius: 20px;
