@@ -1,0 +1,46 @@
+.Titulo {
+    font-family: Indie Flower;
+    color: rgb(29, 20, 105);
+    font-size: 30px;
+}
+.Subtitulo {
+    font-family: Merienda;
+    font-size: 20px;
+    color: #15582c;
+}
+.Contenedor {
+    display: flex;
+    border: 5px solid #a80b67;
+    margin: 20px;
+    padding: 10px;
+    gap: 10px;
+    font-family: "Parkinsans";
+}
+
+.Item {
+    height: 100px;
+    width: 100px;
+    background-color: #9fc4e2;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direction-row-reverse {
+    flex-direction: row-reverse;
+}
+.direction-row {
+    flex-direction: row;
+}
+.direction-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera prueba de Tamaños de Caja</title>
+    <link rel="stylesheet" href="./css/Clase2_Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Indie+Flower&family=Merienda:wght@300..900&family=Parkinsans:wght@300..800&family=Satisfy&family=Sofia&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 style="font-family: Funnel Display;"> Demostración del tamaño de las Cajas</h1>
+    <div class="Contenedor">
+        <div>
+            <h2>Content Box</h2>
+            <div class="box Content_Box">
+                Este es un Content Box
+                <div class="Medidas">
+                    width: 200px; <br>
+                    padding: 20px; <br>
+                    border: 5px; <br>
+
+                    <span class="Resalto">
+                        Ancho Total; 250px
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Border Box </h2>
+                <div class=" box Border_Box">
+                    Este es un Border Box
+                    <div class="Medidas">
+                        width: 200px; <br>
+                        padding: 20px; <br>
+                        border: 5px; <br>
+                    <span class="Resalto">
+                        Ancho total: 200px
+                    </span>
+                     </div>
+                </div>
+        </div>
+        <div>
+            <h2>3er box Prueba</h2>
+        </div>
+    </div>
+
+
+            <div class="Texto">
+                <H2>Explicación</H2>
+
+                <p>
+                    👉 <strong>Content-box:</strong> El ancho total es la suma de width + padding + border
+                    (200px + 40px padding + 10px border = 250px)
+                </p>
+                <p>
+                    👉 <strong>Border-box:</strong> El ancho total es exactamente el width especificado
+                    (200px incluye padding y border)
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    font-family: Anton;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;  
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.NavBar img {
+    height: 100px;
+    border-radius: 40px;
+}
+.EncabezadoFijo {
+    position: fixed;
+    width: 100%;
+    background-color: #eef5f8;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+}
+.EncabezadoFijo a{
+    text-decoration: none;
+}
+.row {
+    height: auto;
+    width: 1500px;
+    background-color: #d9f5e2;
+    
+}
+.row img {
+    height: 100px;
+    width: auto;
+    display: block; /* Asegura que se comporte como un bloque */
+    max-width: 100%; 
+    margin: 0 auto;
+}
+section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    padding: 20px;
+    height: auto; /* Ajusta según el contenido */
+    min-height: 100px; /* Para visualizar mejor el área */
+}
+a {
+    display: flex;
+    align-items: center;
+}
+.card {
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: center;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden; /* Evita que el contenido se desborde fuera de los limites */
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    font-family: Geist;
+    width: 750px;
+    height: 600px;
+    margin: 10px;
+}
+.card img {
+    width: 80%;
+    width: 350px;
+    height: 300px;
+    
+}
+.card h2 {
+    font-family: Inter;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.Boton a{
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Evita que el contenido se desborde fuera de los limites */
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    font-family: Geist;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px solid #d12828;
+    text-decoration: none;
+    background-color: #F5F5F5;
+}
+.Boton img {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+.Boton a:hover {
+    color: #460840;
+    text-decoration: none;
+    background-color: #fdddf5;
+    border-radius: 50px;
+
+}
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px solid rgb(59, 17, 17);
+    flex-direction: column;
+    font-family: IBM Plex Sans; !important
+    margin-bottom: 25px
+    
+}
+.Contenedor {
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: space-around;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden; /* Evita que el contenido se desborde fuera de los limites */
+    flex-wrap: wrap;
+    
+}
+.Contenedor h1 {
+    display: flex;
+    align-items: center;
+    justify-content: justify-self;
+    flex-direction: column;
+}
+.Contenedor div {
+    display: flex;
+    align-items: center;
+    justify-content: justify-self;
+    flex-direction: column;
+}
+/* Ajustes para imágenes */
+.Contenedor img {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 10px;
+    
+}
+.Fuente {
+    font-family: Geist; 
+    font-size: 18px;
+
+}
+.imagenes-en-linea {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes bajen de línea si no caben */
+    padding: 20px;
+}
+
+.imagenes-en-linea img {
+    height: 80px;
+    width: auto;
+    border: solid rgb(186, 241, 239);
+    border-radius: 10px; /* Opcional, para esquinas redondeadas */
+    max-width: 100%; /* Evita desbordamientos */
+}

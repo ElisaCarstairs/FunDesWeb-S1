@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - Flexbox</title>
+    <link rel="stylesheet" href="./css/Clase4_Flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Indie+Flower&family=Merienda:wght@300..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 class="Titulo">
+        Probando las Flexbox
+        </h1>
+    </div>
+    
+    <br>
+    <h2 class="Titulo"> Flex direction Row (default)</h2>
+    <div class="Contenedor">
+        <div class="Item"> 1 </div>
+        <div class="Item"> 2 </div>
+        <div class="Item"> 3 </div>
+    </div>
+    <br>
+    <h2 class="Titulo"> Flex direction Row reversa</h2>
+    <div class="Contenedor direction-row-reverse">
+        <div class="Item"> 1 </div>
+        <div class="Item"> 2 </div>
+        <div class="Item"> 3 </div>
+    </div>
+    <br>
+    <h2 class="Titulo"> Columna (default)</h2>
+    <div class="Contenedor direction-column">
+        <div class="Item"> 1 </div>
+        <div class="Item"> 2 </div>
+        <div class="Item"> 3 </div>
+    </div>
+    <br>
+    <h2 class="Titulo"> Justify content</h2>
+    <div class="Contenedor justify-center">
+        <div class="Item"> 1 </div>
+        <div class="Item"> 2 </div>
+        <div class="Item"> 3 </div>
+    </div>
+    <br>
+    <h2 class="Titulo"> Flex-wrap</h2>
+    <h3 class="Subtitulo"> Acepta el tamaño de las cajas, pero si no caben, empiezan a pasar a la parte de abajo</h3>
+    <div class="Contenedor flex-wrap">
+        <div class="Item"> 1 </div>
+        <div class="Item"> 2 </div>
+        <div class="Item"> 3 </div>
+        <div class="Item"> 4 </div>
+        <div class="Item"> 5 </div>
+        <div class="Item"> 6 </div>
+        <div class="Item"> 7 </div>
+        <div class="Item"> 8 </div>
+        <div class="Item"> 9 </div>
+        <div class="Item"> 10 </div>
+    </div>
+    <br>
+    <h2 class="Titulo"> Flex no wrap</h2>
+    <h3 class="Subtitulo"> No acepta el tamaño de las cajas.
+        Las cajas deben caber en el espacio definido,
+        las medidas de las cajas son ajustadas        
+    </h3>
+    <div class="Contenedor flex-nowrap">
+        <div class="Item"> 1 </div>
+        <div class="Item"> 2 </div>
+        <div class="Item"> 3 </div>
+        <div class="Item"> 4 </div>
+        <div class="Item"> 5 </div>
+        <div class="Item"> 6 </div>
+        <div class="Item"> 7 </div>
+        <div class="Item"> 8 </div>
+        <div class="Item"> 9 </div>
+        <div class="Item"> 10 </div>
+    </div>
+</body>
+</html>
