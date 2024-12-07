@@ -110,9 +110,8 @@ a {
     justify-content: center;
     align-content: center;
     margin: 20px solid rgb(59, 17, 17);
-    flex-direction: column;
-    font-family: IBM Plex Sans; !important
-    margin-bottom: 25px
+    font-family: IBM Plex Sans;
+    margin-bottom: 25px;
     
 }
 .Contenedor {
@@ -123,7 +122,7 @@ a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     overflow: hidden; /* Evita que el contenido se desborde fuera de los limites */
     flex-wrap: wrap;
-    
+        
 }
 .Contenedor h1 {
     display: flex;
