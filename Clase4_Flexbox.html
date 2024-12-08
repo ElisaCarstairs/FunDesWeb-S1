@@ -10,8 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Indie+Flower&family=Merienda:wght@300..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1 class="Titulo">
+    <!-- Barra de navegación fija -->
+    <div class="Subtitulo navbar-fixed">
+        Barra de navegación fija (Fixed)
+        <h3 style="font-family: Parkinsans; font-size: 12px;">Se hace "corta" para visualizar comportamiento de Barra de navegación Sticky</h3>
+    </div>
+    <div style="margin-top: 100px;">
+        <h1 class="Titulo" style="color: rgb(75, 61, 14)">
         Probando las Flexbox
         </h1>
     </div>
@@ -43,6 +48,11 @@
         <div class="Item"> 1 </div>
         <div class="Item"> 2 </div>
         <div class="Item"> 3 </div>
+    </div>
+    </div><!-- Barra de navegación sticky -->
+    <div class="Subtitulo navbar-sticky">
+        Barra de navegación sticky (Sticky)
+        <h3 style="font-family: Parkinsans; font-size: 12px;">Se queda "fija" hasta que se llega a su posición.</h3>
     </div>
     <br>
     <h2 class="Titulo"> Flex-wrap</h2>
@@ -77,5 +87,41 @@
         <div class="Item"> 9 </div>
         <div class="Item"> 10 </div>
     </div>
+    <hr>
+    
+    <div>
+        <h1 class="Titulo">
+            Position en CSS (Parte 1): Static, Relative y Absolute
+        </h1>
+        <h2 class="Subtitulo">Explicación de las posiciones</h2>
+    </div>
+    <div class="container">
+        <!-- Static Element -->
+        <div class="static-box">
+            Elemento 1 con <strong>position: static</strong>.
+            Espacio definido, acorde al padding, margin y width
+        </div>
+        <div class="static-box">
+            Elemento 2 con <strong>position: static</strong>.
+            Separación con Elemento 1 por padding
+        </div>
+
+        <!-- Relative Element -->
+        <div class="relative-box">
+            Elemento 1 con <strong>position: relative</strong>.
+            Ambos elementos se separan por padding de elementos Estáticos
+        </div>
+        <div class="relative-box">
+            Elemento 2 con <strong>position: relative</strong>.
+            
+        </div>
+
+        <!-- Absolute Element -->
+        <div class="absolute-box">
+            Elemento 1 con <strong>position: absolute</strong>, relativo a este contenedor.
+            Se tiene que definir cuánto me muevo respecto al Contenedor
+            Top 300 px. Left 50px
+        </div>
+    
 </body>
 </html>
