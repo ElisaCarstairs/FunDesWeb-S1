@@ -2,6 +2,7 @@
     font-family: Indie Flower;
     color: rgb(29, 20, 105);
     font-size: 30px;
+    text-align: center;
 }
 .Subtitulo {
     font-family: Merienda;
@@ -43,4 +44,67 @@
 }
 .flex-nowrap {
     flex-wrap: nowrap;
+}
+.container {
+    position: relative; /* Necesario para que los hijos con position: absolute se basen en este */
+    width: 500px;
+    height: 600px;
+    background-color: #ffe0f5;
+    border: 2px solid #fc71d0;
+    margin: 20px auto; /* Centra horizontalmente el contenedor */
+    padding: 10px;
+    font-family: "Parkinsans";
+}
+
+/* Estilo para Static */
+.static-box {
+    position: static; /* Valor predeterminado */
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid blue;
+    margin-bottom: 10px; /* Espaciado entre bloques */
+}
+
+/* Estilo para Relative */
+.relative-box {
+    position: relative; /* Relativo a su posición normal */
+    top: 10px; /* Movido hacia abajo */
+    left: 15px; /* Movido hacia la derecha */
+    background-color: lightgreen;
+    padding: 10px;
+    border: 2px solid green;
+}
+
+/* Estilo para Absolute */
+.absolute-box {
+    position: absolute; /* Relativo al contenedor con posición establecida */
+    top: 300px; /* 50px desde la parte superior del contenedor */
+    left: 50px; /* 20px desde la izquierda del contenedor */
+    background-color: lightcoral;
+    padding: 10px;
+    border: 2px solid red;
+}
+/* Barra de navegación fija */
+.navbar-fixed {
+    position: fixed;
+    top: 5px;
+    left: 50px;
+    width: 50%;
+    background-color: #1f2e07;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 10; /* Asegura que la barra quede encima de otros elementos */
+    border-radius: 10px;
+}
+/* Barra de navegación sticky */
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #2b692e;
+    color: white;
+    padding: 10px;
+    text-align:end;
+    z-index: 5; /* Asegura que se quede encima del contenido */
+    border-radius: 15px;
 }
