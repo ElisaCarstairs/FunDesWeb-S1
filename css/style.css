@@ -22,6 +22,7 @@
     padding: 5px;
     align-items: center;
     text-decoration: none;
+    z-index: 5;
 }
 .EncabezadoFijo a{
     text-decoration: none;

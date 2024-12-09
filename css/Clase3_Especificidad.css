@@ -6,42 +6,55 @@ body {
     color: black;
     line-height: 1.6;
 }
-/*Ejemplo de cascada */
+
+/* Ejemplo de cascada */
 .Contenedor {
     background-color: rgb(167, 164, 164);
     padding: 20px;
-    
 }
-/*Diferentes niveles de especifidad */
+
+/* Diferentes niveles de especificidad */
 p {
-    color: aquamarine;
+    color: rgb(255, 255, 255); /* Blanco */
 }
 
 .Texto {
-    color: red;
-    /* Nota de  */
+    color: blue; 
 }
+
 #Parrafo-Especial {
-    color: beige;
+    color: orange;
+    font-style: oblique;
+    font-weight: bold;
 }
+
 .Contenedor .Texto.Destacado {
-    color: purple;
+    color: teal; /* Cambiado de púrpura a teal */
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
+
 .sección-familiar {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 2px solid green;
     padding: 15px;
     margin-top: 20px;
 }
+
 .Caja-Simple {
     background-color: palevioletred;
-    border:15px dashed peru;
+    border: 15px dashed peru;
     padding: 10px;
     margin-top: 10px;
 }
 .texto.centrado {
     text-align: center;
-    color: rgb(52, 95, 38);
+    color: rgb(52, 95, 38); /* Verde oscuro */
+}
+/* Selector de atributo: especificidad 0,0,1,0 */
+[data-especial="true"] {
+    color: navy; 
+}
+* {
+    color: rgb(10, 0, 95); /* Azul oscuro */
 }

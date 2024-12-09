@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 3 - Practica Especificidad</title>
-    <link rel="stylesheet" href="/Clase3_Especifidad.css">
+    <link rel="stylesheet" href="css/Clase3_Especificidad.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Indie+Flower&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">    
+    <link rel="shortcut icon" href="Imagenes/IconosImg/Icon_3_(set_yellow).png" type="image/x-icon">
 </head>
 <body>
     <div class="Contenedor">
         <h1>
             Clase 3
             <br>
-            Práctica de CSS: Especificidad, Herencia y Cascada
+            Práctica de CSS: Especificidad, Herencia y Cascada 
         </h1>
-            <p> Parrafo normal, con estilo base</p>
-            <p class="Texto"> Este párrafo tiene una clase, llamada "Texto"</p>
-            <p id="Parrafo-Especial"> Este parrafo tiene un ID</p>
-            <p class="Texto Destacado"> Esta frase tiene multiples clases</p>
-        
+        <h3>
+            (todo estará dentro de un "contenedor" con fondo gris)
+        </h3>
+            <div>
+                <div>
+                    <h1>Ejemplo de Especificidad</h1>
+                    <h3>Siguientes ejemplos, dentro del selector tipo "< p >"</h3>
+                    <p>Texto afectado solo por el selector de tipo. "P"</p>
+                    <p class="Texto">Texto afectado por el selector de clase.</p>
+                    <p id="Parrafo-Especial">Texto afectado por el selector de ID.</p>
+                    <p data-especial="true" class="class">Texto con selector de atributo y clase (gana atributo).</p>
+                    <p id="Parrafo-Especial" class="class">Texto con ID y clase (gana el ID).</p>
+                    <p style="color: purple;">Texto con estilo en línea (máxima especificidad). Se define color</p>
+                    <p class="Texto Destacado"> Ejemplo 4 Esta frase tiene multiples clases</p>
+            
+                </div>
+            </div>
             <div class="sección-familiar">
-                <h2>Ejemplo de Herencia</h2>
-                <p>Este texto hereda la fuente original del Contenedor</p>
+                <h2>Ejemplo de Herencia 1</h2>
+                <p>Herencia 1.1 Este texto hereda el color de la fuente original del Contenedor</p>
+                <p>Se le define nueva fuente, sobrepone el stilo al definido en Body</p>
             </div>
             <div class="Caja-Simple">
                 <p>Una Caja simple con borde punteado y fondo de color</p>
+                <p>Hereda la fuente, color y tamaño del estilo de Body & Contenedor</p>
             </div>
-        
+            
     </div>
+    
+    <footer>
+        <p>*Nota: Los estilos más específicos tienen prioridad sobre los menos específicos.</p>
+    </footer>
 </body>
 </html>
