@@ -49,3 +49,68 @@ body {
     font-size: 0.8em; /* 0.8 * tamaño del padre */
     border: 2px solid #721c24;
 }
+.Boton a{
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Evita que el contenido se desborde fuera de los limites */
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    font-family: Bonbon;
+    font-size: 36px;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px solid #d12828;
+    text-decoration: none;
+    background-color: #c2a4e6;
+}
+.Boton a:hover {
+    color: #460840;
+    text-decoration: none;
+    background-color: #fdddf5;
+    border-radius: 50px;
+    transition: background-color 0.3s, padding 0.3s;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: 20px solid rgb(148, 121, 64);
+    padding: 20px;
+    gap: 10px;
+}
+.information div{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: 20px solid rgb(148, 121, 64);
+}
+footer{
+    margin: 20px solid  beige;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        background-color: #e9ecef;
+    }
+    .container {
+        font-size: 0.9rem; /* Reduce el tamaño en pantallas más pequeñas */
+    }
+    .rem-box, .em-box, .comparison-box {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Cambia la base para rem en pantallas muy pequeñas */
+    }
+    .container {
+        font-size: 0.8rem;
+    }
+    .rem-box, .em-box, .comparison-box {
+        font-size: 1rem;
+    }
+}
+
