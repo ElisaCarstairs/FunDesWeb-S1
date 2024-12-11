@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="shortcut icon" href="Imagenes/PáginaIndex/Heart-Icon.png" type="image/x-icon">
 </head>
@@ -29,7 +29,7 @@
         </nav>
         
     </Header>
-    <div style="height: 130px;">
+    <div class="Altura">
     <hr> 
     </div>
     <section id="Inicio"><!-- Inicio -->
@@ -39,13 +39,13 @@
     </section>
     <hr>
     <section id="Modulos">
-        <div class="card centrado">
+        <div class="card">
             <div>
                 <img src="Imagenes/PáginaIndex/Introduccion-a-la-Programacion-Jairo-GALEAS.jpg" alt="">
             
             </div>
             <div>
-                <h2>Introducción a la Programación</h2>                
+                <h2 class="Fuente">Introducción a la Programación</h2>                
             </div>
             <div class="Boton">
                 <a href="https://imgur.com/a/devf-repositorio-de-im-genes-marina-arredondo-UkGbucH" target="_blank">
@@ -66,8 +66,8 @@
             <div>
                 <img src="Imagenes/PáginaIndex/maxresdefault.jpg" alt="">
             </div>
-            <div>
-                <h2>Fundamentos de Desarrollo Web</h2>                
+            <div >
+                <h2 class="Fuente">Fundamentos de Desarrollo Web</h2>                
             </div>
             <div class="Boton">
                 <a href="https://imgur.com/a/devf-repositorio-de-im-genes-marina-arredondo-UkGbucH" target="_blank">
@@ -84,7 +84,7 @@
         </div>
     </section>
     <hr>
-    <section class="imagenes-en-linea">
+    <section class="imagenes-en-linea" style="flex-direction: row;">
         <img src="Imagenes/PáginaIndex/división-gif.gif" alt="">
         <img src="Imagenes/PáginaIndex/división-gif.gif" alt="">
         <img src="Imagenes/PáginaIndex/división-gif.gif" alt="">
@@ -98,7 +98,9 @@
     <br>
     <main>
         <div class="Contenedor Fuente Boton">
-            <img src="./Imagenes/PáginaIndex/LogoStarbie1.png" alt="Bebida Starbucks" style="height: 100px;">
+            <div>
+                <img src="./Imagenes/PáginaIndex/LogoStarbie1.png" alt="Bebida Starbucks" style="height: 100px;">
+            </div>
             <div>
                 <a href="https://elisacarstairs.github.io/FunDesWeb-S1/PaginaStarbucks.html" target="_blank" >
                     Starbucks Clon Page
@@ -107,8 +109,9 @@
                     Link a Repositorio
                 </a>
             </div> 
-            <img src="./Imagenes/PáginaIndex/Café1.png" alt="Bebida Starbucks" style="height: 100px;"">
-                                  
+            <div>
+                <img src="./Imagenes/PáginaIndex/Café1.png" alt="Bebida Starbucks" style="height: 100px;""> 
+            </div>             
         </div>
     </main>
     <br>
@@ -176,7 +179,7 @@
             <div class="centrado">
                 <h1>Clase 4</h1>
                 <div class="centrado Boton">
-                    <a href="https://elisacarstairs.github.io/FunDesWeb-S1/Clase2.html" target="_blank" class="Boton">
+                    <a href="https://elisacarstairs.github.io/FunDesWeb-S1/Clase4_Flexbox.html" target="_blank" class="Boton">
                         GitHub Page
                     </a>
                     <a href="https://github.com/ElisaCarstairs/FunDesWeb-S1" target="_blank" class="Boton">
@@ -187,17 +190,18 @@
             <img src="./Imagenes/PáginaIndex/Flexbox_example.gif" alt="Bebida Starbucks" class="imagen-fija"> 
         </div>
         <br>
-        <div class="Contenedor Fuente">
-            <img src="./Imagenes/PáginaIndex/Composicion-vs-Herencia.png" alt="Contenedor vs Herencia" class="imagen-fija">
-            <div class="centrado Boton">
-                <h1>Clase 5</h1>
-                <a href="https://elisacarstairs.github.io/FunDesWeb-S1/Clase1.html" target="_blank" class="Boton">
-                    GitHub Page
-                </a>
-                <a href="https://github.com/ElisaCarstairs/FunDesWeb-S1" target="_blank" class="Boton">
-                    Link a Repositorio
-                </a>
+        <div class="Contenedor Fuente" style="flex-direction: column;">
+            <div style="font-size: 54px;">
+                COMERCIALES
             </div>
+            <DIV>                
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/jG7dSXcfVqE?si=pZtw9UYZJwEaFLAM"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </DIV>
+            
         </div>
         <br>
         <div class="Contenedor Fuente">
@@ -215,15 +219,25 @@
             <img src="./Imagenes/PáginaIndex/Header&Footer.gif" alt="Bebida Starbucks" class="imagen-fija"> 
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="Contenedor Fuente">
+            <img src="./Imagenes/PáginaIndex/MediaQueries.gif" alt="Contenedor vs Herencia" class="imagen-fija">
+            <div class="centrado Boton">
+                <h1>Clase 7</h1>
+                <a href="https://elisacarstairs.github.io/FunDesWeb-S1/Clase3_Especifidad.html" target="_blank" class="Boton">
+                    GitHub Page
+                </a>
+                <a href="https://github.com/ElisaCarstairs/FunDesWeb-S1" target="_blank" class="Boton">
+                    Link a Repositorio
+                </a>
+            </div>
+        </div>
+        <div class="Altura"></div>
     </main>
     <footer>
-        <div class="cookie-footer">
-            <p>Este sitio utiliza cookies para mejorar la experiencia. <a href="#cookies-policy">Más información</a>.</p>      
+        <div class="cookie-footer" style="font-size: 12px;">
+            <p>Este sitio utiliza cookies para mejorar la experiencia.
+                <a href="#cookies-policy">Más información</a>
+            </p>      
             <button class="cookie-accept">Aceptar</button>          
           </div>
     </footer>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación de EM y REM</title>
+    <link rel="stylesheet" href="css/Clase7.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonbon&family=Delius&family=Playwrite+GB+S+Guides:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="Imagenes/IconosImg/7.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Unidades EM y REM</h1>
+        <p>Las unidades <strong>em</strong> y <strong>rem</strong> son usadas en CSS para definir tamaños relativos. A continuación se explican con ejemplos prácticos:</p>
+
+        <div class="box rem-box">
+            <h2>REM</h2>
+            <p>REM (Root EM) se basa en el tamaño de la fuente del elemento raíz (<code>html</code>). Si el tamaño de la fuente del elemento <code>html</code> es 16px (por defecto), un valor de 1rem equivale a 16px, 2rem equivale a 32px, y así sucesivamente.</p>
+            <p style="font-size: 1rem;">Texto con tamaño de 1rem (16px).</p>
+            <p style="font-size: 2rem;">Texto con tamaño de 2rem (32px).</p>
+        </div>
+
+        <div class="box em-box">
+            <h2>EM</h2>
+            <p>EM es relativo al tamaño de la fuente del elemento padre. Si el elemento padre tiene un tamaño de 16px y un elemento hijo tiene <code>font-size: 1.5em</code>, el tamaño del texto del hijo será 24px (16px * 1.5).</p>
+            <p style="font-size: 1em;">Texto con tamaño de 1em (igual al padre).</p>
+            <p style="font-size: 2em;">Texto con tamaño de 2em (doble del tamaño del padre).</p>
+            <div class="nested-box">
+                <p>Esta caja tiene un tamaño relativo basado en su contenedor.</p>
+                <p style="font-size: 0.8em;">Texto más pequeño (80% del tamaño del padre).</p>
+            </div>
+        </div>
+
+        <div class="box comparison-box">
+            <h2>Comparación lado a lado</h2>
+            <p>En esta sección comparamos <strong>em</strong> y <strong>rem</strong> en el mismo contexto:</p>
+            <p style="font-size: 1em;">Texto con 1em (igual al tamaño del padre).</p>
+            <p style="font-size: 1rem;">Texto con 1rem (igual al tamaño raíz).</p>
+        </div>
+
+        <footer>
+            Se añade a Proyecto final
+        </footer>
+    </div>
+</body>
+</html>
+

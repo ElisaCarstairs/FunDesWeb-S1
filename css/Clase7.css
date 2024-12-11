@@ -1,0 +1,51 @@
+/* Estilos generales */
+html {
+    font-size: 16px; /* Base para calcular rem */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    
+}
+.container p {
+    font-family: Delius;
+}
+/* Caja para REM */
+.rem-box {
+    background-color: #cce5ff;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem; /* 1.5 * 16px = 24px */
+    border: 2px solid #004085;
+    font-family: Playwrite GB SGuides;
+}
+
+/* Caja para EM */
+.em-box {
+    background-color: #d4edda;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 1.25em; /* 1.25 * tamaño del padre */
+    border: 2px solid #155724;
+}
+
+/* Caja anidada dentro de EM */
+.nested-box {
+    background-color: #f8d7da;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 0.8em; /* 0.8 * tamaño del padre */
+    border: 2px solid #721c24;
+}
