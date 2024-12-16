@@ -310,4 +310,8 @@ a {
         height: auto;
         border-radius: 20px;
     }
+    footer {
+        width: 50%;
+    }
 }
+
