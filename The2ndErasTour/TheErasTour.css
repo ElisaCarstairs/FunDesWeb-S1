@@ -1,0 +1,414 @@
+/* Estilos para el contenedor de la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul li a {
+    color: #222;
+    text-decoration: none;
+    transition: background-color 0.3s, padding 0.3s;
+    font-family: Borel;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    background-color: #e271f194;
+    padding: 10px;
+    border-radius: 70px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    background-color: beige;
+    color: white;
+    padding: 10px;
+    z-index: 53; 
+    border-radius: 15px;
+}
+.Boton a{
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #000000;
+    font-family: Englebert;
+    font-size: 36px;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: normal;
+    border-radius: 12px;
+}
+.Boton img {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+.Boton a:hover {
+    color: #460840;
+    text-decoration: none;
+    background-color: #a3e5ff;
+    border-radius: 50px;
+    color: #000000;
+    letter-spacing: 12px;
+}
+.Boton2 a{
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #000000;
+    font-family: Englebert;
+    font-size: 24px;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: normal;
+    border-radius: 12px;
+}
+.Boton2 img {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+.Boton2 a:hover {
+    color: #460840;
+    text-decoration: none;
+    background-color: #a3e5ff;
+    border-radius: 50px;
+    color: #000000;
+    letter-spacing: 12px;
+}
+section table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+    font-family: Borel;
+    
+}
+.btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-family: Englebert;
+}
+.btn:hover {
+    background-color: #444;
+}
+tr:nth-child(even) {
+    background-color: #fef6f3;
+}
+.container-eras {
+    display: flex;
+    gap: 75px;
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.eras img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.eras {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.eras-archivo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.eras:hover img {
+    filter: brightness(50%); 
+    transform: scale(1.05); 
+}
+
+.eras:hover .Link-Album {
+    opacity: 1; /* Hace visible el nombre del álbum */
+}
+
+.Link-Album {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease-in-out;
+    font-family: Borel, sans-serif;
+    text-align: center;
+}
+
+.Centrado {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.video-container {
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding-bottom: 56.25%; /* Proporción 16:9 (altura = ancho * 9 / 16) */
+    height: 0; /* Altura inicial para mantener la proporción */
+    overflow: hidden;
+}
+
+
+
+
+
+.video-container iframe, 
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 100%; /* Ajusta a la altura del contenedor */
+    border: none;
+}
+
+/* General: Ocultamos el checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Icono de hamburguesa */
+.hamburger-icon {
+    display: block; /* Mostramos el ícono en pantallas pequeñas */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    z-index: 10; /* Aseguramos que el ícono esté encima del menú */
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after,
+.hamburger-icon span {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #fff; /* Cambiamos el color para mejor visibilidad */
+    width: 100%;
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-icon span {
+    top: 10px; /* Línea del medio */
+}
+
+.hamburger-icon::before {
+    top: 0; /* Línea superior */
+}
+
+.hamburger-icon::after {
+    top: 20px; /* Línea inferior */
+}
+
+/* Estado activo del menú */
+.menu-toggle:checked + .hamburger-icon::before {
+    transform: translateY(10px) rotate(45deg); /* Línea superior rota */
+}
+
+.menu-toggle:checked + .hamburger-icon::after {
+    transform: translateY(-10px) rotate(-45deg); /* Línea inferior rota */
+}
+
+.menu-toggle:checked + .hamburger-icon span {
+    opacity: 0; /* Línea del medio desaparece */
+}
+
+/* Estilos para el menú */
+.nav-links {
+    display: none; /* Ocultamos el menú inicialmente */
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 60px; /* Posición del menú desplegable */
+    left: 0;
+    right: 0;
+    background-color: #333; /* Fondo oscuro para el menú */
+    padding: 20px;
+    text-align: center;
+    z-index: 9;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #815503; /* Color de enlace al pasar el ratón */
+}
+
+/* Mostrar menú cuando el checkbox está marcado */
+.menu-toggle:checked ~ .nav-links {
+    display: flex;
+}
+/* Botón contenedor */
+.tour-button a{    
+    background-color: #27345c; /* Color de fondo */
+    color: white;
+    text-decoration: none;
+    letter-spacing: normal;
+    border: 2px solid white; /* Borde blanco */
+    padding: 20px 40px; /* Espaciado interno */
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Englebert;;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease; /* Transición suave */
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* Texto pequeño */
+.tour-title {
+    font-size: 1.2rem;
+    display: block; /* Bloque para que ocupe toda la línea */
+}
+
+/* Texto grande */
+.international-dates {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+/* Efecto hover */
+.tour-button a:hover {
+    background-color: white; /* Cambia fondo */
+    color: #1b2440; /* Cambia color del texto */
+    border-color: #1b2440; /* Cambia color del borde */
+}
+
+.cookie-footer {
+    position: fixed; /* Siempre visible al final de la pantalla */  
+    bottom: 0; /* Pegado a la parte inferior */  
+    left: 0;  
+    right: 0;  
+    background-color: #222; /* Fondo oscuro para que destaque */  
+    color: #fff; /* Texto en blanco para buen contraste */  
+    padding: 5px; /* Reduce el espacio interno */
+    height: auto; /* Ajusta automáticamente el alto según el contenido */
+    display: flex; /* Organiza el contenido de manera horizontal */  
+    justify-content: space-between; /* Espacia el texto y el botón */  
+    align-items: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem; /* Reduce el tamaño del texto si es necesario */
+}
+.cookie-footer button {  
+    background-color: #4caf50; /* Verde para el botón */  
+    color: white;  
+    border: none;  
+    padding: 10px; /* Reduce el tamaño del botón */  
+    font-size: 0.85rem; /* Ajusta el tamaño del texto del botón */
+    cursor: pointer;  
+}
+.cookie-footer button:hover {  
+    background-color: #45a049; /* Efecto al pasar el ratón sobre el botón */
+}
+.Altura {
+    height: 60px;
+}
+
+@media screen and (max-width:430px) {
+    .Boton a:hover {
+        letter-spacing: 1px;
+    }
+    header img {
+        width: 50%;
+    }
+    footer {
+        width: 50%;
+    }
+}
+
+/* Diseño para pantallas grandes */
+@media (min-width: 768px) {
+    .hamburger-icon {
+        display: none; /* Ocultamos el ícono de hamburguesa */
+    }
+
+    .nav-links {
+        display: flex; /* Mostramos el menú siempre */
+        position: static; /* Posicionamos el menú de forma normal */
+        flex-direction: row; /* Alineamos los enlaces en fila */
+        gap: 50px;
+        background-color: transparent; /* Fondo transparente */
+        padding: 0;
+    }
+
+    .nav-links a {
+        color: #222; /* Ajustamos el color de los enlaces para pantallas grandes */
+    }
+}
+@media (max-width: 768px) {
+    .international-dates {
+        font-size: 2rem;
+    }
+    .tour-title {
+        font-size: 1rem;
+    }
+}
